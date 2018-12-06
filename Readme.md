@@ -14,7 +14,7 @@
 - visdom (for visualization training process)
 - wandb (for visualization training process)
 
-NOTICE: different versions of Pytorch package have different memory usages.
+NOTICE: different versions of PyTorch package have different memory usages.
 
 ## How to use
 ### Training on PASCAL VOC (20 classes)
