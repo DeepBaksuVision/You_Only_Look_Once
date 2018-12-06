@@ -1,46 +1,48 @@
 # A PyTorch implementation of a YOLO v1 Object Detector
- Implementation of YOLO v1 object detector in PyTorch (TF-Slim). Full tutorial can be found [here](https://deepbaksuvision.github.io/Modu_ObjectDetection/) in korean.
+ Implementation of YOLO v1 object detector in PyTorch. Full tutorial can be found [here](https://deepbaksuvision.github.io/Modu_ObjectDetection/) in korean.
 
  Tested under Python 3.6, PyTorch 0.4.1 on Ubuntu 16.04, Windows10.
 
 ## prerequisites
 
-- Python >= 3.6
-- Pytorch >= 0.4.3 
+- python >= 3.6
+- pytorch >= 1.0.0 (1.0.0 also fine)
+- torchvision >= 0.2.0
+- matplotlib
+- numpy
+- opencv
+- visdom (for visualization training process)
+- wandb (for visualization training process)
 
-
-Tested under python3.
-
-python packages
-pytorch>=0.3.1
-torchvision>=0.2.0
-cython
-matplotlib
-numpy
-scipy
-opencv
-pyyaml
-packaging
-pycocotools — for COCO dataset, also available from pip.
-tensorboardX — for logging the losses in Tensorboard
-An NVIDAI GPU and CUDA 8.0 or higher. Some operations only have gpu implementation.
 NOTICE: different versions of Pytorch package have different memory usages.
 
 ## How to use
-Testi
-Training on PASCAL VOC 
+### Training on PASCAL VOC (20 classes)
+```
+main.py --mode train -data_path where/your/dataset/is --class_path ./names/VOC.names --num_class 20 --use_augmentation True --use_visdom True
+```
+
+### Test on PASCAL VOC (20 classes)
+```
+main.py  --mode test --data_path where/your/dataset/is --class_path ./names/VOC.names --num_class 20 --checkpoint_path your_checkpoint.pth.tar
+```
+
 ## Supported Datasets
-Only COCO is supported for now. However, the whole dataset library implementation is almost identical to Detectron's, so it should be easy to add more datasets supported by Detectron.
+Only Pascal VOC datasets are supported for now.
 
 ## Configuration Options
 
 ## Results 
-## Authorship
-This project is equally contributed by [Chanhui Jeong](https://github.com/chjeong530), [Donghyeon Hwang](https://github.com/ssaru), and [Jaewon Lee](https://github.com/insurgent92).
+Todo: Result Images here!!
 
-## Pre-trained models     
+## Authorship
+This project is equally contributed by [Chanhee Jeong](https://github.com/chjeong530), [Donghyeon Hwang](https://github.com/ssaru), and [Jaewon Lee](https://github.com/insurgent92).
+
+## Pre-trained models
+Todo: model here!  
 
 ## Copyright
 See [LICENSE](./LICENSE) for details.
+
 ## REFERENCES
-[1] Redmon, Joseph, et al. "You only look once: Unified, real-time object detection." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
+[1] Redmon, Joseph, et al. "You only look once: Unified, real-time object detection." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016. (https://arxiv.org/abs/1506.02640)
