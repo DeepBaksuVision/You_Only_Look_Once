@@ -31,6 +31,27 @@ main.py  --mode test --data_path where/your/dataset/is --class_path ./names/VOC.
 Only Pascal VOC datasets are supported for now.
 
 ## Configuration Options
+|argument          |type|description|default|
+|:-----------------|:----|:---------------------- |:----|
+|--mode            |str  |train or test           |train|
+|--dataset         |str  |only support voc now    |voc  |
+|--data_path       |str  |data path               |     |
+|--class_path      |str  |filenames text file path|     |
+|--input_height    |int  |input height            |448  |
+|--input_width     |int  |input width             |448  |
+|--batch_size      |int  |batch size              |16   |
+|--num_epochs      |int  |# of epochs             |16000|
+|--learning_rate   |float|initial learning rate   |1e-3 |
+|--dropout         |float|dropout probability     |0.5  |
+|--num_gpus        |int  |# of GPUs for training  |1    |
+|--checkpoint_path |str  |checkpoint path         |./   |
+|--use_augmentation|bool |image Augmentation      |True |
+|--use_visdom      |bool |visdom                  |False|
+|--use_wandb       |bool |wandb                   |False|
+|--use_summary     |bool |descripte Model summary |True |
+|--use_gtcheck     |bool |gt check flag           |False|
+|--use_githash     |bool |use githash             |False|
+|--num_class       |int  |number of classes       |5    |
 
 ## Results 
 Todo: Result Images here!!
