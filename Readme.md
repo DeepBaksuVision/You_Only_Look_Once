@@ -3,16 +3,9 @@
 
  Tested under Python 3.6, PyTorch 0.4.1 on Ubuntu 16.04, Windows10.
 
-## prerequisites
+## Requirements
 
-- python >= 3.6
-- pytorch >= 1.0.0 (1.0.0 also fine)
-- torchvision >= 0.2.0
-- matplotlib
-- numpy
-- opencv
-- visdom (for visualization training process)
-- wandb (for visualization training process)
+See [requirements](./requirements.txt) for details.
 
 NOTICE: different versions of PyTorch package have different memory usages.
 
