@@ -56,9 +56,6 @@ Only Pascal VOC datasets are supported for now.
 ## Authorship
 This project is equally contributed by [Chanhee Jeong](https://github.com/chjeong530), [Donghyeon Hwang](https://github.com/ssaru), and [Jaewon Lee](https://github.com/insurgent92).
 
-## Pre-trained models
-Todo: model here!  
-
 ## Copyright
 See [LICENSE](./LICENSE) for details.
 
